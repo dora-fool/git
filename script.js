@@ -7,6 +7,16 @@ class User {
         console.log(this.name);
     }
 }
-const user = new User ('Sofia');
 
-user.greet();
+class Person extends User{
+    constructor(name, surname){
+        super(name);
+        this.surname = surname;
+    }
+    FullName(){
+        console.log(this.name);
+    }
+}
+
+const person = new Person ('Sofia', 'Sofieva');
+person.FullNmae();
